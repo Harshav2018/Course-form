@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./9391712.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Hebrew:wght@100..800&family=WDXL+Lubrifont+SC&display=swap"
+        rel="stylesheet">
+    <title>Course Registration Form</title>
+</head>
+
+<body>
+    <h1>Course Registration Form</h1>
+    <form action="">
+        <fieldset>
+            <legend>Personal details</legend>
+            <table>
+                <tr>
+                    <td><label>First Name</label></td><td></td>
+                    <td><input type="text" name="FN" placeholder="Ex:Harsha" size="15" maxlength="10" required>
+                        <p>Enter your firstname</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Surname</label></td><td></td>
+                    <td><input type="text" name="LN" placeholder="Ex:V" size="15" optional>
+                        <p>Enter your lastname</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Mobile number</label></td><td></td>
+                    <td><input type="tel" name="mob" placeholder="Ex:3543453948" size="15" required>
+                        <p>Enter your moblie number</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Email</label></td><td></td>
+                    <td><input type="Email" name="mail" size="15" placeholder="Ex:harsha@gmail.com" required>
+                        <img class="valid" src="./ok.png">
+                        <img class="invalid" src="./no.png"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Password</label></td><td></td>
+                    <td><input type="Password" name="pwd" placeholder="min 8 characters" min="8" size="15" required>
+                        <p>Enter a strong password</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Confirm Password</label></td><td></td>
+                    <td><input type="Password" name="cpwd" placeholder="min 8 characters" size="15" required>
+                        <p>Renter the password</p><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>DOB</label></td><td></td>
+                    <td><input type="date" name="dob" required>
+                        <p>Enter your date of birth</p><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>AGE</label></td><td></td>
+                    <td><input type="number" name="age" required min="18" max="100">
+                        <img class="valid" src="./ok.png">
+                        <img class="invalid" src="./no.png"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td><td></td>
+                    <td><input type="radio" name="gender" value="M"><label>Male</label>
+                        <input type="radio" name="gender" value="F"><label>Female</label>
+                        <input type="radio" name="gender" value="C"><label>Others</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Select Country</label></td><td></td>
+                    <td>
+                        <select name="Country">
+                            <option class="opt" value="INDIA">INDIA</option>
+                            <option class="opt" value="USA">USA</option>
+                            <option class="opt" value="UK">UK</option>
+                            <option class="opt" value="GERMANY">GERMANY</option>
+                        </select><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Upload Picture</label></td><td>&nbsp;&nbsp;&nbsp;</td>
+                    <td><input type="file" name="pic"><br></td>
+                </tr>
+                <tr>
+                    <td><input type="reset"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Course Details</legend>
+            <table>
+                <tr>
+                    <td><label>Select Course</label></td></td><td>&nbsp;&nbsp;&nbsp;</td>
+                    <td>
+                        <select name="Course">
+                            <option value="JFS">Java Full Stack</option>
+                            <option value="PFS">Python Full Stack</option>
+                            <option value="MFS">MERN Stack</option>
+                            <option value="DO">Devops</option>
+                            <option value="PDS">Python for DataScience</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Delivery Mode</label></td><td></td>
+                    <td>
+                        <input type="radio" name="mode" value="ON"><label for="">ONLINE</label>
+                        <input type="radio" name="mode" value="OFF"><label for="">OFFLINE </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>INSTITUTE NAME</label></td><td></td>
+                    <td>
+                        <input type="text" value="TAP ACADEMY" readonly>
+                    </td>
+                </tr>
+            </table>
+            <label>Comments</label><br>
+            <textarea rows="4" cols="40"></textarea>
+        </fieldset>
+        <br>
+        <input type="submit" name="" id="" />
+    </form>
+</body>
+
+</html>

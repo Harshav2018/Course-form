@@ -1,0 +1,157 @@
+*{
+     font-family: "Playpen Sans Hebrew", cursive;
+}
+
+body {
+    
+    background: linear-gradient(to left, #feac5e, #c779d0, #4bc0c8);
+   
+    color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 600px;
+    margin: 0px auto;
+}
+
+fieldset {
+    border: 4px solid;
+    border-radius: 15px;
+}
+
+input[required]:invalid {
+    border: 2px solid red;
+    border-radius: 5px;
+}
+input[required]:valid {
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+
+input[optional] {
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+
+input:focus {
+    background-color: #a3d5e1;
+}
+
+input+p {
+    display: none;
+}
+
+input:hover+p {
+    display: inline;
+    color: #260ed8;
+}
+
+input[type="radio"]:checked {
+    height: 18px;
+    width: 18px;
+}
+
+input[type="radio"]:checked +label {
+    font-size: 20px;
+    color: #6c13b0;
+}
+
+select {
+    border-radius: 4px;
+    width: 200px;
+}
+
+textarea{
+    resize: none;
+}
+
+input[type="Email"] ~ img {
+    display: none;
+}
+
+input[type="Email"]:focus:valid ~ img.valid {
+    display: inline;
+    height: 20px;
+    width: 20px;
+}
+
+input[type="Email"]:focus:invalid ~ img.invalid {
+    display: inline;
+    height: 20px;
+    width: 20px;
+}
+
+input[type="number"] ~ img {
+    display: none;
+}
+
+input[type="number"]:focus:valid ~ img.valid {
+    display: inline;
+    height: 20px;
+    width: 20px;
+}
+
+input[type="number"]:focus:invalid ~ img.invalid {
+    display: inline;
+    height: 20px;
+    width: 20px;
+}
+
+input[type="file"] {
+    border-radius: 5px;
+}
+
+
+input[type="reset"]:hover {
+    background-color: #efbc55;
+    box-shadow: 3px 3px rgb(133, 30, 230);
+}
+input[type="reset"] {
+    background-color: #e48627;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    background-color: rgb(36, 169, 217);
+    height: 30px;
+    width: 120px;
+    display: block;
+    margin: 0px auto;
+    border-radius: 5px;
+}
+input[type="submit"]:hover {
+    background-color: rgb(59, 224, 169);
+    box-shadow: 3px 3px rgb(133, 30, 230);
+}
+
+input[required]:hover {
+    box-shadow: 3px 3px rgb(133, 30, 230);
+}
+
+
+input[optional]:hover {
+    box-shadow: 3px 3px rgb(133, 30, 230);
+}
+
+select:hover {
+ box-shadow: 3px 3px rgb(133, 30, 230);   
+}
+
+textarea {
+    border-radius: 8px;
+    border: 2px solid;
+}
+
+input[readonly] {
+    border-radius: 5px;
+}
+input[readonly]:hover {
+    box-shadow: 3px 3px rgb(133, 30, 230);
+}
+
+label {
+    line-height: 35px;
+}
